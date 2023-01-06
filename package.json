@@ -1,0 +1,22 @@
+{
+  "name": "tutoria",
+  "version": "1.0.0",
+  "description": "An online learning platform ",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hebypaul/tutoria.git"
+  },
+  "author": "Heby T Paul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hebypaul/tutoria/issues"
+  },
+  "homepage": "https://github.com/hebypaul/tutoria#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
