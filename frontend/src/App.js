@@ -6,6 +6,7 @@ import Register from './pages/Register';
 import Header from './components/Header';
 
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route path='/login' element={<Login/>} />
               <Route path='/register' element={<Register/>} />
             </Routes>
+            <Footer />
           </div>
       </Router>
     </>

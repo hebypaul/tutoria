@@ -11,6 +11,7 @@ const Dashboard = () => {
       <Cards />
       <Features />
       <Testimonial />
+      <Stats />
     </>
   )
 }
