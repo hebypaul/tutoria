@@ -4,6 +4,9 @@ import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Header from './components/Header';
+import Courses from './pages/Courses';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 import './App.css';
 import Footer from './components/Footer';
@@ -18,6 +21,9 @@ function App() {
               <Route path='/' element={<Dashboard/>} />
               <Route path='/login' element={<Login/>} />
               <Route path='/register' element={<Register/>} />
+              <Route path='/courses' element={<Courses />}/>
+              <Route path='/About' element={<About />}/>
+              <Route path='/contact' element={<Contact />}/>
             </Routes>
             <Footer />
           </div>
