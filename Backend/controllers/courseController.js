@@ -16,12 +16,12 @@ const getCourses = asyncHandler(async (req, res)=>{
 
 
 const setCourse =asyncHandler( async (req, res)=>{
-    if(!req.body.name ){
+    if(!req.body.course_name ){
         res.status(400)
-        throw new Error('Please add a name field')
+        throw new Error('Please add a course name field')
     }
     const course = await Course.create({
-        name: req.body.name
+        course_name: req.body.course_name
     })
     res.status(200).json(course)
 })

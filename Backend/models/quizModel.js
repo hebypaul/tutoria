@@ -1,3 +1,7 @@
+const mongoose = require("mongoose");
+
+const Schema = mongoose.Schema;
+
 const quizSchema = new Schema({
     quiz_title: { type: String, required: true },
     quiz_question: [{ type: String, required: true }],
