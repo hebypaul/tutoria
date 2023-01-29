@@ -10,8 +10,22 @@ const getCourses = asyncHandler(async (req, res)=>{
     res.status(200).json(courses)
 })
 
+// @desc Get Courses
+// @route GET /api/courses/all
+// @access Public
+
+const getAllCourses = asyncHandler(async (req, res)=>{
+    const courses = await Course.find()
+    res.status(200).json(courses)
+})
+
+const getCoursesById = asyncHandler(async (req, res)=>{
+    id = req.params.id;
+    const course = await Course.findById(id)
+    res.status(200).json({ data: course });
+})
 // @desc Set Course
-// @route POST /api/Courses
+// @route POST /api/Courses/addcourse
 // @access Private
 
 
@@ -20,10 +34,8 @@ const setCourse =asyncHandler( async (req, res)=>{
         res.status(400)
         throw new Error('Please add a course name field')
     }
-    const course = await Course.create({
-        course_name: req.body.course_name
-    })
-    res.status(200).json(course)
+    const course = await Course.create(req.body)
+    res.status(200).json({data : course})
 })
 
 // @desc Update course
@@ -63,6 +75,8 @@ const deleteCourse = asyncHandler( async (req, res)=>{
 
 module.exports ={
     getCourses,
+    getAllCourses,
+    getCoursesById,
     setCourse,
     updateCourse,
     deleteCourse
