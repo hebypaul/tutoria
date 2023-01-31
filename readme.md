@@ -1,6 +1,6 @@
 # Tutoria
 
-An online Learning platform build in MERN st react , Express Js , node Js 
+An online Learning platform build in MERN Stack
 
 ## Fronted 
 
