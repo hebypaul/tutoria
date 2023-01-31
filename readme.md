@@ -2,7 +2,7 @@
 
 An online Learning platform build in MERN Stack
 
-## Fronted 
+## Frontend 
 
 React Js
 Tailwind Css
