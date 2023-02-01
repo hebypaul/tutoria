@@ -8,11 +8,12 @@ React Js
 Tailwind Css
 
 ## Backend 
-
-Node Js
-Express Js
-MongoDb
-Mongoose 
+<ul>
+<li> Node Js  </ li>
+<li> Express Js </ li>
+<li> MongoDb </ li>
+<li> Mongoose </ li>
+</ul>
 
 
 
