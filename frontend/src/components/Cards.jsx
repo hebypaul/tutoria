@@ -1,5 +1,7 @@
 import React from 'react'
-import Card from './Card'
+import CardCarousel from './CardCarousel'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 const Cards = () => {
   return (
@@ -12,10 +14,7 @@ const Cards = () => {
             </div>
             </div>
             <div class="flex flex-wrap -m-4">
-                <Card/>
-                <Card />
-                <Card />
-                <Card />
+              <CardCarousel />
             </div>
         </div>
     </section>

@@ -1,5 +1,4 @@
 import React from 'react'
-import CardCarousel from '../components/CardCarousel'
 import Cards from '../components/Cards'
 import Features from '../components/Features'
 import Hero from '../components/Hero'
@@ -10,7 +9,7 @@ const Dashboard = () => {
   return (
     <>
       <Hero />
-      <CardCarousel />
+      <Cards />
       <Features />
       <Testimonial />
       <Stats />
