@@ -7,7 +7,9 @@ An online Learning platform build in MERN Stack
  <li> React Js </li>
  <li> Tailwind CSS </li>
 </ul>
+
 ## Backend 
+
 <ul>
 <li> Node Js  </ li>
 <li> Express Js </ li>
