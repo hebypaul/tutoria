@@ -3,10 +3,10 @@
 An online Learning platform build in MERN Stack
 
 ## Frontend 
-
-React Js
-Tailwind Css
-
+<ul> 
+ <li> React Js </li>
+ <li> Tailwind CSS </li>
+</ul>
 ## Backend 
 <ul>
 <li> Node Js  </ li>
