@@ -3,7 +3,7 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-re
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import Card from './Card';
 import useWindowDimensions from '../CustomHooks/useWindowDimensions';
-
+import courses from './cardData.json'
 const CardCarousel = () => {
     const { height, width } = useWindowDimensions();
 
@@ -13,7 +13,7 @@ const CardCarousel = () => {
       h: 700,
       w: 500,
     });
-  
+    
     useEffect(() => {
       if (width > 1300) {
         setVisibleSlides(4);
@@ -54,21 +54,12 @@ const CardCarousel = () => {
      >
 
     <Slider>
-        <Slide index={0}>
-            <Card />
-        </Slide>
-        <Slide index={1}>
-            <Card />
-        </Slide>
-        <Slide index={2}>
-            <Card />
-        </Slide>
-        <Slide index={3}>
-            <Card />
-        </Slide>
-        <Slide index={4}>
-            <Card />
-        </Slide>
+        {courses?.map((course,idx)=>(
+          <Slide index={idx} key={idx}>
+              <Card data={course}/>
+          </Slide>
+        ))
+        }
     </Slider>
 <div className="flex ">
 <div className=" mx-auto mt-2">
