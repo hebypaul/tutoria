@@ -8,3 +8,11 @@ export const getCourses = async (category) => {
 
     return response.data
 }
+
+export const getCoursesById = async (id) => {
+
+    const response = await axios.get(API_URL + id)
+
+    return response.data
+}
+
