@@ -30,6 +30,7 @@ function CourseDetail() {
     </div>    
     </div>
     <div className="container px-5 py-16 mx-auto flex flex-wrap items-center ">
+    <h1 className="title-font font-medium text-3xl pb-16">Syllabus</h1>
         <Accordion items={items} />
     </div>
     </>
