@@ -22,7 +22,7 @@ const getAllCourses = asyncHandler(async (req, res)=>{
 const getCoursesById = asyncHandler(async (req, res)=>{
     id = req.params.id;
     const course = await Course.findById(id)
-    res.status(200).json({ data: course });
+    res.status(200).json( course );
 })
 // @desc Set Course
 // @route POST /api/Courses/addcourse
