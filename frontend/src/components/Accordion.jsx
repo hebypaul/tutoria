@@ -22,7 +22,7 @@ const Accordion = ({ items }) => {
             onClick={() => handleItemClick(index)}
             className="flex items-center justify-between w-full px-4 py-4 text-sm font-medium text-left text-gray-900 bg-gray-100 focus:outline-none focus:shadow-outline-blue"
           >
-            <span>{item.title}</span>
+            <span>{item.section_name}</span>
             <span className="ml-6 flex-shrink-0">
               <svg
                 className="-mr-1 ml-2 h-5 w-5"
@@ -43,7 +43,7 @@ const Accordion = ({ items }) => {
           </button>
           {openIndexes.includes(index) && (
             <div className="px-4 pb-4">
-              <p className="text-gray-500">{item.content}</p>
+              <p className="text-gray-500">{item.section_text}</p>
             </div>
           )}
         </div>
