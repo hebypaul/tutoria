@@ -50,7 +50,6 @@ const CardCarousel = () => {
     useEffect(()=>{
       getCourses('all').then((res) =>{
         setCourses(res);
-        console.log(res)
       })
     },[])
 

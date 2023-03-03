@@ -4,30 +4,15 @@ import { getCoursesById } from '../features/getCourses';
 import { useState , useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 
-// const items = [
-//     {
-//       title: "What is React?",
-//       content: "React is a JavaScript library for building user interfaces.",
-//     },
-//     {
-//       title: "What is Tailwind CSS?",
-//       content: "Tailwind CSS is a utility-first CSS framework for rapidly building custom designs.",
-//     },
-//     {
-//       title: "How do I use this Accordion component?",
-//       content: "Pass an array of items as a prop to the Accordion component.",
-//     },
-//   ];
+
 
 function CourseDetail() {
   const {id}= useParams()
   const [course, setCourse] = useState([])
-  const sections = course.sections
-  console.log(sections)
+
   useEffect(()=>{
     getCoursesById(id).then((res) =>{
       setCourse(res);
-      console.log(res)
     })
   },[])
 
@@ -47,7 +32,7 @@ function CourseDetail() {
     </div>
     <div className="container px-5 py-16 mx-auto flex flex-wrap items-center ">
     <h1 className="title-font font-medium text-3xl pb-16">Syllabus</h1>
-        {sections ? <Accordion items={sections}  /> : <p> No content </p>}
+        {course.sections ? <Accordion items={course.sections}  />  : <p> No content</p> }
     </div>
     </>
   )
