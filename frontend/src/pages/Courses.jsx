@@ -1,12 +1,12 @@
 import React from 'react'
-import CoursesList from '../components/CoursesList'
+import CoursesLists from '../components/CoursesLists'
 import Cards from '../components/Cards'
 
 const Courses = () => {
   return (
     <>
       <Cards />
-      <CoursesList/>
+      <CoursesLists/>
     </>
   )
 }
