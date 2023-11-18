@@ -1,7 +1,8 @@
 # Tutoria
-#-------------------
-#Project abandoned 
-#------------------
+<hr/>
+<h1>Project abandoned </h1>
+
+
 An online Learning platform build in MERN Stack
 
 ## Frontend 
