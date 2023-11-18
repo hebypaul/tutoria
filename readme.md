@@ -1,6 +1,10 @@
 # Tutoria
 <hr/>
-<h1>Project abandoned </h1>
+
+ > [!WARNING] 
+ > The Project is incomplete and not fit for use .
+
+<hr />
 
 
 An online Learning platform build in MERN Stack
