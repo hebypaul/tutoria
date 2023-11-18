@@ -1,5 +1,7 @@
 # Tutoria
-
+#-------------------
+#Project abandoned 
+#------------------
 An online Learning platform build in MERN Stack
 
 ## Frontend 
