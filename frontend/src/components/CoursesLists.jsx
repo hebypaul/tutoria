@@ -22,7 +22,7 @@ const CoursesLists = () => {
       </div>   
       <div className="-my-8 divide-y-2 divide-gray-100">
       {courses?.map((course)=>(
-            <CourseList data={course}/>
+            <CourseList  key={course._id} data={course}/>
       ))
       }
 
