@@ -32,4 +32,5 @@ An online Learning platform build in MERN Stack
  > [!CAUTION]
  > : `Work in progress `
 
+.......
 <a href="https://wakatime.com/badge/github/hebypaul/tutoria"><img src="https://wakatime.com/badge/github/hebypaul/tutoria.svg" alt="wakatime"></a>
